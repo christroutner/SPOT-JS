@@ -18,6 +18,7 @@ var xmllib = require("node-xml-lite");
 var csv = require('fast-csv');
 
 //Global Variables
+var FeedID = "0n1DuvcKbXUAQJ2GPB7OC3lTXd57CjSuc";  //Replace this with the FeedID of your SPOT tracker.
 var i = 0;
 var j = 0;
 var MasterData = [];
@@ -45,7 +46,7 @@ csv
 //Retrieve the last 50 messages:
 //http://api.findmespot.com/spot-main-web/consumer/rest-api/2.0/public/feed/0n1DuvcKbXUAQJ2GPB7OC3lTXd57CjSuc/message.xml
 
-var req = https.get("https://api.findmespot.com/spot-main-web/consumer/rest-api/2.0/public/feed/0n1DuvcKbXUAQJ2GPB7OC3lTXd57CjSuc/message.xml", function(res) {
+var req = https.get("https://api.findmespot.com/spot-main-web/consumer/rest-api/2.0/public/feed/"+FeedID+"/message.xml", function(res) {
   
   //HTTPS Info
   console.log("statusCode: ", res.statusCode);
