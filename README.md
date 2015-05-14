@@ -1,7 +1,7 @@
 # SPOT-JS
 SPOT-JS is open source JavaScript code to download and display SPOT tracker data. There is a Server and Client component to the software. The Server uses the Node.js compiler to execute a JavaScript program that downloads the SPOT data from the SPOT server and saves it as a CSV file. The Client is web-page Javascript that downloads the CSV file from the Server and displays the data in the browser using the Google Maps API.
 
-The code in this project is meant to only a functional example. Not much time has been spent on error handling in an effort to keep the code simple and straitforward. It's not turn-key code, but an example for you to start with.
+The code in this project is meant only to be a functional example. Not much time has been spent on error handling in an effort to keep the code simple and straitforward. It's not turn-key code, but an example for you to start with.
 
 
 Notes on setting up the Server:
